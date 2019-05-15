@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classes in ES5</title>
+</head>
+<body>
+    
+    <script>
+        var Vehicle = function(){
+            this.whells = null;
+            this.model = null;
+            this.speed = null;
+            this.getWhells = function(){
+                return this.whells;
+            }
+        }
+
+        var BMW = function(){
+            this.engineCapacity =null;
+            this.type = null; 
+        }
+
+        var v1 = new Vehicle();
+        v1.prototype = new BMW();
+
+        console.log(v1.engineCapacity = 300);
+        console.log(v1.type = 'Car');
+
+        console.log(v1.whells = 4);
+        console.log(v1.model = 'Audi');
+        console.log(v1.speed = '100Kmph');
+        console.log(v1.getWhells());
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list"></ul>
+
+    <button type="button" class="btn btn-success btn-block" onclick="show()">click</button>
+    <button type="button" class="btn btn-danger btn-block" onclick="hide()">click</button>
+     <script>
+        function hide(){
+            document.getElementById("list").innerHTML='';
+        }
+         function show(){
+                var tem='';
+            var fruits = ["Apple", "Mango", "Banana"];
+            for(var i=0;i<fruits.length;i++){
+            tem+= "<li>"+fruits[i]+"</li>";
+            }
+            document.getElementById("list").innerHTML=tem;
+        }
+        
+     </script>
+     
+     
+
+
+
+    <script>
+        
+        // var n = 46;
+        // if(n%2==0){
+        //     console.log("X is Even Number")
+        // }else{
+        //     console.log("X is ODD Number");
+        // }
+
+        // var age = 20;
+        // if(age > 18 ) {
+        //     console.log("Drving lince allowed");
+        // }else {
+        //     console.log("Driving lince not allowed");
+        // }
+
+        // var marks = 36;
+        // if(marks > 80) {
+        //     console.log("A Grade");
+        // }else if(marks <=80 && marks >=70) {
+        //     console.log("B Grade");
+        // }else if(marks < 50 && marks >70) {
+        //     console.log("C Grade");
+        // }else if(marks <=50 && marks >=36) {
+        //     console.log("D Grade");
+        // }else {
+        //     console.log("Fail");
+        // }
+
+        // var books = 'maths';
+        // switch(books) {
+        //     case 'science':
+        //         console.log("This is Science Book");
+        //         break;
+        //     case 'social':
+        //         console.log("This is Social Book");
+        //         break;
+        //     case 'maths':
+        //         console.log("This is Maths Book");
+        //         break;
+        //     default: console.log('There is No Book');        
+        // }
+// 
+//         for(var i=1000; i>=1;i--){
+//             console.log(i);
+//         } 
+
+        //  var number = 1000;
+        //  while(number >= 1){
+        //      console.log(number);
+        //      number-=1;
+        //  }
+
+        // var number = 1;
+        // while(number < 1000){
+        //     number+=2;
+        //     console.log(number);
+        // }
+
+        //  for(var i=1; i<1000; i+=2){
+        //      console.log(i);
+        //  }
+
+        // var number = 0;
+        // while(number < 1000){
+        //     number+=2;
+        //     console.log(number);
+        // }
+
+        // Even Numbers
+        // function printEven(num) {
+        //     for (var i=1; i<num; i++) {
+        //         if(i % 2 === 0) {
+        //           console.log(i);
+        //         }
+        //     }
+        // }
+        // printEven(100);
+        
+        // // OddNumbers
+        // function printOdd(num) {
+        //     for (let i=1; i<num; i++) {
+        //         if(i % 2 !== 0) {
+        //           console.log(i);
+        //         }
+        //     }
+        // }
+        // printOdd(100);
+
+        // function printOdd(num) {
+        //     for (let i=1; i<num; i++) {
+            
+        //           console.log(i);
+                
+        //     }
+        // }
+        // printOdd(100);
+        
+        // function prime(num){
+        //     for(var i=2; i <= num; i++){
+        //         var isPrime = true;
+        //         for(var n=2; n<i; n++){
+        //             if(i % n==0){
+        //                 isPrime = false;
+        //                 break;
+        //             }
+        //         }
+        //         if(isPrime){
+        //             console.log(i);
+        //         }               
+        //     }
+        // }
+        // prime(100);
+
+        // function prime(num){
+        //     for(var i=1000; i >= num; i--){
+        //         var isPrime = true;
+        //         for(var n=2; n<i; n++){
+        //             if(i % n==0){
+        //                 isPrime = false;
+        //                 break;
+        //             }
+        //         }
+        //         if(isPrime){
+        //             console.log(i);
+        //         }               
+        //     }
+        // }
+        // prime(2);
+
+        // function even(min,max){
+        //     for(var m=min; m <= max; m++){
+        //         if(m % 2 == 0){
+        //             console.log(m);
+        //         }
+        //     }
+        // }   
+        // even(1,100);
+        // even(200,500);
+
+        // function primeList(min,max){
+        //     for(var m=min; m<= max; m++){
+        //         var isPrime = true;
+        //         for(var n =20; n<m; n++){
+        //             if(m % n==0){
+        //                 isPrime=false;
+        //                 break;
+        //             }
+        //         }
+        //         if(isPrime){
+        //             console.log(m);
+        //         }
+        //     }
+        // }
+        // primeList(20,2000);
+        
+        // var fruits = ['mango','apple','banana'];
+
+        // var tpl = "<ul>" +
+        //             "<li>Apple</li>" +
+        //             "<li>Mango</li>" +
+        //             "<li>Banana</li>" +
+        //           "</ul>";
+
+        // document.getElementById("main").innerHTMl = 'tpl';
+        
+    </script>
+</body>
+</html>
